@@ -1,0 +1,23 @@
+#!/bin/bash
+# cloud
+
+# Script to allow execution of bash scripts placed
+# in the dev_tools directory of pCloudDirve.
+#
+# usage:
+# cloud [fileName] [options]
+#
+# Author: Chris Reasoner
+# Version: 2019.03.09
+
+if [ "$1" = "" ]; then
+    echo "Error: missing argument"
+    exit
+fi
+
+# Run the program specified in the first argument
+# following cloud. 
+# ?? - Pass in the next argument
+bash ~/pCloudDrive/dev_tools/$1 $2 $3
+
+exit 0
