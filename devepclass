@@ -1,0 +1,25 @@
+#!/bin/bash
+# devepclass
+
+# Script to create an entry point class
+# i.e., Java class with a main method
+# usage devepclass [className]
+#    or devepclass [className] e 
+#    to edit the class in vim
+#
+# Author: Chris Reasoner
+# Version: 2019-02-16
+
+if [ "$1" = "" ]; then
+    echo "Error: missing argument"
+    exit
+fi
+
+cp ~/pCloudDrive/dev_tools/boilerplate/EntryPointClass ./$1.java
+sed -i -e "s/MATCH/$1/g" ./$1.java
+
+if [ "$2" = "e" ]; then
+    vim ./$1.java
+fi
+
+exit 0
