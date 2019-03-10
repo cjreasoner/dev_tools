@@ -1,4 +1,4 @@
-# epclass
+# dev_tools
 
 devepclass - a script to create a Java class with a main method and
              a specified name
