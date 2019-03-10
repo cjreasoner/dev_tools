@@ -8,7 +8,7 @@
 #    to edit the class in vim
 #
 # Author: Chris Reasoner
-# Version: 2019-02-16
+# Version: 2019.03.09
 
 if [ "$1" = "" ]; then
     echo "Error: missing argument"
