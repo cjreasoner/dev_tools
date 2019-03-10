@@ -1,0 +1,13 @@
+#!/bin/bash
+# open-cribsheet
+# Script to open crib_sheet document - cleanly launches gui
+# application via the terminal.
+# I created this script so that I could open a libreoffice document
+# using Mint's panel launcher applet.
+
+# The brackets open a new subshell. The >/dev/null 2>&1 redirects the
+# shell output to nowhere. The & at the end puts the process in the
+# background.
+(libreoffice /home/cjreasoner/Documents/crib_sheet.odt  >/dev/null 2>&1 &)
+
+exit 0
